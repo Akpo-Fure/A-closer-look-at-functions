@@ -81,20 +81,20 @@
 
 
 
-// Functions returning functions
-const greet = function(greeting){
-    return function(name){
-        console.log(`${greeting} ${name}`)
-    }
-}
+// // Functions returning functions
+// const greet = function(greeting){
+//     return function(name){
+//         console.log(`${greeting} ${name}`)
+//     }
+// }
 
-const greeeterHey = greet("Hey")
-greeeterHey("Akpofure")
-greeeterHey("Brother")
+// const greeeterHey = greet("Hey")
+// greeeterHey("Akpofure")
+// greeeterHey("Brother")
 
-greet("Hello")("Akpofure")
+// greet("Hello")("Akpofure")
 
-const greeter = greeting => name => console.log(`${greeting} ${name}`)
+// const greeter = greeting => name => console.log(`${greeting} ${name}`)
 
-const greeeterHello = greet("Helllo")
-greeeterHey("Akpofure")
+// const greeeterHello = greet("Helllo")
+// greeeterHey("Akpofure")
