@@ -23,30 +23,58 @@
 // createBooking("LH123", undefined ,1000)
 
 
-//How Passing Arguments Work
 
-const flight = "LH234"
-const Akpofure = {
-    name: "Okegbe Akpofure",
-    passport: 2348147567515
+// //How Passing Arguments Work
 
-}
-const checkIn = function(flightNum, passenger){
-  flightNum = "LH999"
-  passenger.name = "Mr. " + passenger.name
+// const flight = "LH234"
+// const Akpofure = {
+//     name: "Okegbe Akpofure",
+//     passport: 2348147567515
+// }
+// const checkIn = function(flightNum, passenger){
+//   flightNum = "LH999"
+//   passenger.name = "Mr. " + passenger.name
 
-  if(passenger.passport === 2348147567515){
-    alert("checked in")
-  }else{
-    alert("Wrong passport")
-  }
-}
-checkIn(flight, Akpofure)
-console.log(flight)
-console.log(Akpofure)
+//   if(passenger.passport === 2348147567515){
+//     alert("checked in")
+//   }else{
+//     alert("Wrong passport")
+//   }
+// }
+// checkIn(flight, Akpofure)
+// console.log(flight)
+// console.log(Akpofure)
 
-const newPassport = function(person){
-    person.passport = Math.trunc(Math.random() + 1000000000)
-}
-newPassport(Akpofure)
-checkIn(flight, Akpofure)
+// const newPassport = function(person){
+//     person.passport = Math.trunc(Math.random() + 1000000000)
+// }
+// newPassport(Akpofure)
+// checkIn(flight, Akpofure)
+
+
+
+// //Functions Accepting CallBack Functions
+
+// const oneWord = function(str){
+//     return str.replace(/ /g, "").toLowerCase
+// }
+// const upperFirstWord = function(str){
+//     const [first, ...others] = str.split(" ")
+//     return [first.toUpperCase(), ...others].join(" ")
+// }
+// const trasnformer = function(str, fn,){
+//     console.log(`Original string: ${str}`)
+//     console.log(`Transformed string: ${fn(str)}`)
+
+//     console.log(`Transformed by: ${fn.name}`)
+
+// }
+// trasnformer("JavaSCript is the best!", upperFirstWord)
+// trasnformer("JavaSCript is the best!", oneWord)
+
+// const high5 = function(){
+//     console.log("✋")
+// }
+// // document.body.addEventListener("click", high5)
+// const array = ["Okegbe", "Akpofure", "Adam"]
+// array.forEach(high5);
