@@ -67,7 +67,6 @@
 //     console.log(`Transformed string: ${fn(str)}`)
 
 //     console.log(`Transformed by: ${fn.name}`)
-
 // }
 // trasnformer("JavaSCript is the best!", upperFirstWord)
 // trasnformer("JavaSCript is the best!", oneWord)
@@ -82,6 +81,7 @@
 
 
 // // Functions returning functions
+
 // const greet = function(greeting){
 //     return function(name){
 //         console.log(`${greeting} ${name}`)
@@ -98,3 +98,14 @@
 
 // const greeeterHello = greet("Helllo")
 // greeeterHey("Akpofure")
+
+const lufthansa = {
+    airline: "Lufthansa",
+    iataCode: "LH",
+    bookings: [],
+    book(flightNum, name){
+        console.log(`${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}}`)
+    } 
+}
+lufthansa.book(239, "Okegbe AKpofure")
+lufthansa.book(256, "Onajite blabla")
