@@ -99,13 +99,46 @@
 // const greeeterHello = greet("Helllo")
 // greeeterHey("Akpofure")
 
-const lufthansa = {
-    airline: "Lufthansa",
-    iataCode: "LH",
-    bookings: [],
-    book(flightNum, name){
-        console.log(`${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}}`)
-    } 
-}
-lufthansa.book(239, "Okegbe AKpofure")
-lufthansa.book(256, "Onajite blabla")
+
+
+// // The Call and Apply Methods
+
+// const lufthansa = {
+//     airline: "Lufthansa",
+//     iataCode: "LH",
+//     bookings: [],
+//     book(flightNum, name){
+//         console.log(`${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}}`)
+//         this.bookings.push({flight: `${this.iataCode}${flightNum}`, name})
+//     }
+    
+// }
+// lufthansa.book(239, "Okegbe AKpofure")
+// lufthansa.book(256, "Onajite blabla")
+// console.log(lufthansa)
+
+// const euroWings = {
+//     name: "Eurowings",
+//     iataCode: "EW",
+//     bookings: []
+// }
+// const book = lufthansa.book
+// // book(23, "Emeka Ofor")
+// //Call Method
+// book.call(euroWings, 23, "Emeka Ofor")
+// console.log(euroWings)
+// book.call(lufthansa, 250, "Jubril Bucknor")
+// console.log(lufthansa)
+
+// const swiss = {
+//     airline: "Swift Air Lines",
+//     iataCode: "LX",
+//     bookings: []
+// }
+// book.call(swiss, 583, "Abuba Sahabi")
+// console.log(swiss)
+// //Apply Method
+// const flightData = [563, "George Cooper"]
+// book.apply(swiss, flightData)
+// console.log(swiss)
+// book.call(swiss, ...flightData)
