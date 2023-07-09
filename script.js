@@ -7,7 +7,6 @@
 //     // ES5
 //     // numPassangers = numPassangers || 1
 //     // price = price || 199
-
 //     const booking = {
 //         flightNum,
 //         numPassangers,
@@ -34,7 +33,6 @@
 // const checkIn = function(flightNum, passenger){
 //   flightNum = "LH999"
 //   passenger.name = "Mr. " + passenger.name
-
 //   if(passenger.passport === 2348147567515){
 //     alert("checked in")
 //   }else{
@@ -44,7 +42,6 @@
 // checkIn(flight, Akpofure)
 // console.log(flight)
 // console.log(Akpofure)
-
 // const newPassport = function(person){
 //     person.passport = Math.trunc(Math.random() + 1000000000)
 // }
@@ -65,12 +62,10 @@
 // const trasnformer = function(str, fn,){
 //     console.log(`Original string: ${str}`)
 //     console.log(`Transformed string: ${fn(str)}`)
-
 //     console.log(`Transformed by: ${fn.name}`)
 // }
 // trasnformer("JavaSCript is the best!", upperFirstWord)
 // trasnformer("JavaSCript is the best!", oneWord)
-
 // const high5 = function(){
 //     console.log("✋")
 // }
@@ -87,13 +82,10 @@
 //         console.log(`${greeting} ${name}`)
 //     }
 // }
-
 // const greeeterHey = greet("Hey")
 // greeeterHey("Akpofure")
 // greeeterHey("Brother")
-
 // greet("Hello")("Akpofure")
-
 // const greeter = greeting => name => console.log(`${greeting} ${name}`)
 
 // const greeeterHello = greet("Helllo")
@@ -110,15 +102,13 @@
 //     book(flightNum, name){
 //         console.log(`${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}}`)
 //         this.bookings.push({flight: `${this.iataCode}${flightNum}`, name})
-//     }
-    
+//     }   
 // }
 // lufthansa.book(239, "Okegbe AKpofure")
 // lufthansa.book(256, "Onajite blabla")
 // console.log(lufthansa)
-
 // const euroWings = {
-//     name: "Eurowings",
+//     airline: "Eurowings",
 //     iataCode: "EW",
 //     bookings: []
 // }
@@ -129,7 +119,6 @@
 // console.log(euroWings)
 // book.call(lufthansa, 250, "Jubril Bucknor")
 // console.log(lufthansa)
-
 // const swiss = {
 //     airline: "Swift Air Lines",
 //     iataCode: "LX",
@@ -142,3 +131,35 @@
 // book.apply(swiss, flightData)
 // console.log(swiss)
 // book.call(swiss, ...flightData)
+
+
+
+// //The Bind Nethod
+
+// const bookEW = book.bind(euroWings)
+// const bookLH = book.bind(lufthansa)
+// const bookLX = book.bind(swiss)
+// bookEW(23, "John Doe")
+// const bookEW23 = book.bind(euroWings, 23)
+// bookEW23("Emmanuel Okegbe")
+// bookEW23("Mara Clara")
+// //WIth Event Listeners
+// lufthansa.planes = 300
+// lufthansa.buyPlane = function(){
+//     console.log(this)
+//     this.planes++
+//     console.log(this.planes)
+// }
+// document.querySelector(".buy").addEventListener("click", lufthansa.buyPlane.bind(lufthansa))
+// //Partial application 
+// // const addTax = (rate, value) => value + value * rate
+// // console.log(addTax(0.1,200))
+// // const addVat = addTax.bind(null, 0.23)
+// // console.log(addVat(100))
+// const addTaxRate = function(rate){
+//     return function(value){
+//         return value + value * rate
+//     }
+// }
+// const addVat2 = addTaxRate(0.23)
+// console.log(addVat2(100))
