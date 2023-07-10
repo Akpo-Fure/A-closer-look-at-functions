@@ -263,3 +263,40 @@ BONUS TEST DATA 2: [1, 5, 3, 9, 6, 1]
 // booker()
 // booker()
 // console.dir(booker)
+
+
+
+//More Closure Examples
+//Example1
+let f;
+const g = function(){
+    const a = 23
+    f = function(){
+        console.log(a * 2)
+    }
+}
+const h = function(){
+    const b = 777
+    f = function(){
+        console.log(b* 2)
+    }
+}
+g()
+f()
+h()
+f()
+console.dir(f)
+//Example2
+const boardPassangers = function(n, wait){
+    const perGroup = n / 2
+    setTimeout(function(){
+        console.log(`We are now boarding all ${n} passengers`)
+        console.group(`There are 3 groups, each with ${perGroup} passengers`)
+    }, wait * 1000)
+
+
+    console.log(`WIll start boarding in ${wait} seconds`)
+}
+
+const perGroup = 1000
+boardPassangers(180, 3)
