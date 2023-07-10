@@ -226,3 +226,23 @@ BONUS TEST DATA 2: [1, 5, 3, 9, 6, 1]
 // poll.displayResults.call({answers: [5,2,3]}, "string")
 // poll.displayResults.call({answers: [1,5,3,9,6]}, "string")
 // poll.displayResults.call({answers: [5,2,3]}, "string")
+
+
+// const runOnce = function(){
+//     console.log("This will never run again")
+// }
+
+
+
+// //Immediately Invoked Function
+// (function (){
+//     console.log('This will neber happen again')
+//     const isPrivate = 23
+// })()
+// // (() => console.log('This will ALSO never run again'))()
+// {
+//     const isPrivate = 23
+//     var notPrivate = 46
+// }
+
+// console.log(notPrivate)
