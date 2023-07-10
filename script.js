@@ -246,3 +246,20 @@ BONUS TEST DATA 2: [1, 5, 3, 9, 6, 1]
 // }
 
 // console.log(notPrivate)
+
+
+
+// //Closures
+// const secureBooking = function(){
+//     let passengerCount = 0
+
+//     return function(){
+//         passengerCount++
+//         console.log(`${passengerCount} passangers`)
+//     }
+// }
+// const booker = secureBooking()
+// booker()
+// booker()
+// booker()
+// console.dir(booker)
